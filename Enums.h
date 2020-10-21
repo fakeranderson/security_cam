@@ -1,0 +1,26 @@
+namespace ObjectTypeEnums
+{
+
+enum ObjectType
+{
+
+  OBJECTTYPE_INVALID = -1,
+  OBJECTTYPE_FIRST,
+  OBJECTTYPE_VEHICLE,
+  OBJECTTYPE_PERSON,
+  OBJECTTYPE_ANIMAL,
+  OBJECTTYPE_MAX
+
+}
+
+enum VehicleByBrand
+{
+  VEHICLE_INVALID = -1,
+  VEHICLE_FIRST = 0,
+  VEHICLE_USPS = 1,
+  VEHCILE_UPS = 2,
+  VEHICLE_FEDEX = 4,
+  VEHICLE_MAX = 8,
+}
+
+}
