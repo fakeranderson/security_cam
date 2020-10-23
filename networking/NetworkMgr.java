@@ -5,7 +5,7 @@ public class NetworkMgr
 {
 	public static void main(String[] args) 
 	{
-		checkHosts("192.168.0");
+		checkHosts("192.168.68");
 	}
 
 	static public void checkHosts(String subnet)
@@ -16,6 +16,7 @@ public class NetworkMgr
 		   	String host=subnet + "." + i;
 			try
 			{
+        //System.out.println(host);
 			if (InetAddress.getByName(host).isReachable(timeout))
 			{
 				System.out.println(host + " is reachable");
@@ -23,6 +24,7 @@ public class NetworkMgr
 			}
 			catch(IOException e)
 			{
+        System.out.println("Failed");
 				e.printStackTrace();
 			}
 	   }
