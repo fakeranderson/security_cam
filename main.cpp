@@ -5,6 +5,8 @@
 int main()
 {
 
+	// Grab the latest image from the camera. 60fps/30fps
+	//
   // 1. get the image, store locally
   // 2. process the image for objects, stored in a container
   // 3. process the container of objects, alert for those we're instructed to
